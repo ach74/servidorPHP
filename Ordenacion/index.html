@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Algoritmos de busqueda</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" lang="es-es">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+
+	<form action="text01.php" method="POST" id="contenidoForm" enctype="multipart/form-data">
+
+		<h1>Algoritmos de busqueda</h1>
+
+		<select id="selOrdenacion" class="select" name="select1">
+			<option name="value1" value="1">Burbuja</option>
+			<option name="value2" value="2">Inserción Directa</option>
+			<option name="value3" value="3">Selección directa</option>
+		</select>
+		<br>
+
+		<select id="selGeneracion" class="select" onchange="generar()" name="select2">
+			<option name=" " value="" selected="selected">Seleciona una opcion</option> 
+			<option value="1">Aleatorio</option>
+			<option value="2">Por teclado</option>
+			<option value="3">Por defecto</option>
+		</select>
+		<br>
+
+		<div id="Aleatorio">
+			<input type="text" name="tamañoArray" placeholder="Escribe el tamaño de la array" >
+		</div>
+		
+		<div id="teclado">
+			<input type="text" name="valoresTeclado" placeholder="Escribe los valores" >
+		</div>
+		
+		<input type="submit" value="Guardar">
+
+	</form>
+</body>
+</html>

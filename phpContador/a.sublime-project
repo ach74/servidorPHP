@@ -1,0 +1,21 @@
+{
+	"folders":
+	[
+		{
+			"path": "C:\\Users\\dam2a08\\Desktop\\A7\\D.interfacesA2.7\\Achraf_ElOuakili"
+		},
+		{
+			"path": "C:\\xampp\\htdocs\\tareas\\Space_Invade_0.1\\css"
+		},
+		{
+			"path": "C:\\xampp\\htdocs\\tareas\\CodeIgniter-3.1.9\\CodeIgniter-3.1.9"
+		}
+	],
+	"settings":
+	{
+		"xdebug":
+		{
+			"url": "http://localhost/phpContador/index02.php"
+		}
+	}
+}

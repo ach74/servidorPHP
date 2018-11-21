@@ -1,0 +1,25 @@
+#Aleatorio,#teclado,#jsonArchivo{
+	display: none;
+}
+
+body{
+	background: #e8eaf6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#contenidoForm{
+	width: 500px;
+	height: auto;
+	border:  1px solid black;
+	padding: 10px;
+	border-radius: 50px 20px;
+	margin-top: 10%;
+	background: #b6b8c3;
+	text-align: center;
+}
+.select{
+	width: 150px;
+	height: 20px;
+	margin-bottom: 20px;
+}
