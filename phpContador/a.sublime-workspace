@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"in",
+				"input\tTag"
+			],
+			[
 				"bord",
 				"border-radius\tproperty"
 			],
@@ -30,10 +34,6 @@
 			[
 				"nu",
 				"number"
-			],
-			[
-				"in",
-				"intentos"
 			],
 			[
 				"num",
@@ -428,46 +428,32 @@
 	"buffers":
 	[
 		{
-			"file": "/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/index.php",
+			"file": "/C/xampp/htdocs/tareas/formularioPhpComunadades/config/database.php",
 			"settings":
 			{
-				"buffer_size": 10253,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/controllers/Welcome.php",
-			"settings":
-			{
-				"buffer_size": 679,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/controllers/Blog.php",
-			"settings":
-			{
-				"buffer_size": 156,
+				"buffer_size": 668,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/controllers/Products.php",
+			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n\t<title>PDO - Create a Record - PHP CRUD Tutorial</title>\n\n\t<!-- Latest compiled and minified Bootstrap CSS -->\n\t<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" />\n\n</head>\n<body>\n\n\t<!-- container -->\n\t<div class=\"container\">\n\n\t\t<div class=\"page-header\">\n\t\t\t<h1>Create Product</h1>\n\t\t</div>\n\n\t\t<?php\nif($_POST){\n \n    // include database connection\n    include 'config/database.php';\n \n    try{\n     \n        // insert query\n        $query = \"INSERT INTO products SET name=:name, description=:description, price=:price, created=:created\";\n \n        // prepare query for execution\n        $stmt = $con->prepare($query);\n \n        // posted values\n        $name=htmlspecialchars(strip_tags($_POST['name']));\n        $description=htmlspecialchars(strip_tags($_POST['description']));\n        $price=htmlspecialchars(strip_tags($_POST['price']));\n \n        // bind the parameters\n        $stmt->bindParam(':name', $name);\n        $stmt->bindParam(':description', $description);\n        $stmt->bindParam(':price', $price);\n         \n        // specify when this record was inserted to the database\n        $created=date('Y-m-d H:i:s');\n        $stmt->bindParam(':created', $created);\n         \n        // Execute the query\n        if($stmt->execute()){\n            echo \"<div class='alert alert-success'>Record was saved.</div>\";\n        }else{\n            echo \"<div class='alert alert-danger'>Unable to save record.</div>\";\n        }\n         \n    }\n     \n    // show error\n    catch(PDOException $exception){\n        die('ERROR: ' . $exception->getMessage());\n    }\n}\n?>\n\n\t\t<!-- html form here where the product information will be entered -->\n\t\t<form action=\"<?php echo htmlspecialchars($_SERVER[\"PHP_SELF\"]);?>\" method=\"post\">\n\t\t\t<table class='table table-hover table-responsive table-bordered'>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>CIF</td>\n\t\t\t\t\t<td><input type='text' name='CIF' class='form-control'/></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Pais</td>\n\t\t\t\t\t<td><input type='text' name='pais' class='form-control'/></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Nombre</td>\n\t\t\t\t\t<td><input type='text' name='nombre' class='form-control'/></td>\n\t\t\t\t</tr>\n\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Direccion</td>\n\t\t\t\t\t<td><input type='text' name='direccion' class='form-control' /></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Imagen</td>\n\t\t\t\t\t<td><input type='file' name='Imagen' class='form-control'></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Control de gastos</td>\n\t\t\t\t\t<td><select name=\"controlGastos\" class='form-control'>\n\t\t\t\t\t\t<option value=\"si\">Si</option>\n\t\t\t\t\t\t<option value=\"no\">No</option>\n\t\t\t\t\t</select></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Control de Ingresos</td>\n\t\t\t\t\t<td><select name=\"controlIngresos\" class='form-control'>\n\t\t\t\t\t\t<option value=\"si\">Si</option>\n\t\t\t\t\t\t<option value=\"no\">No</option>\n\t\t\t\t\t</select></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Moneda</td>\n\t\t\t\t\t<td><select name=\"moneda\" class='form-control'>\n\t\t\t\t\t\t<option value=\"euro\">Euros</option>\n\t\t\t\t\t\t<option value=\"dolar\">Dolar</option>\n\t\t\t\t\t\t<option value=\"pesos\">Pesos</option>\n\t\t\t\t\t\t<option value=\"rupias\">Notificaciones</option>\n\t\t\t\t\t</select></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Notificaciones</td>\n\t\t\t\t\t<td><select name=\"Notificaciones\" class='form-control'>\n\t\t\t\t\t\t<option value=\"todos\">Todos</option>\n\t\t\t\t\t\t<option value=\"contactoPrincipal\">Contacto Principal</option>\n\t\t\t\t\t</select></td>\n\t\t\t\t</tr>\n\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Ver cuenta comunidad de propietarios</td>\n\t\t\t\t\t<td><select name=\"verCuentaComunidad\" class='form-control'>\n\t\t\t\t\t\t<option value=\"todos\">Todos</option>\n\t\t\t\t\t\t<option value=\"administrador\">Administrador</option>\n\t\t\t\t\t\t<option value=\"mienbros\">Mienbro del consejo de administracion</option>\n\t\t\t\t\t</select></td>\n\t\t\t\t</tr>\n\n\t\t\t\t<tr>\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<input type='submit' value='Save' class='btn btn-primary' />\n\t\t\t\t\t\t<a href='index.php' class='btn btn-danger'>Back to read products</a>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</table>\n\t\t</form>\n\n\t</div> <!-- end .container -->\n\n\t<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n\t<script src=\"https://code.jquery.com/jquery-3.2.1.min.js\"></script>\n\n\t<!-- Latest compiled and minified Bootstrap JavaScript -->\n\t<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n\n</body>\n</html>",
+			"file": "/C/xampp/htdocs/tareas/formularioPhpComunadades/create.php",
+			"file_size": 3132,
+			"file_write_time": 131873795307914250,
 			"settings":
 			{
-				"buffer_size": 169,
+				"buffer_size": 4265,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/config/routes.php",
+			"file": "/C/xampp/htdocs/tareas/limitar_acceso/.htaccess",
 			"settings":
 			{
-				"buffer_size": 2013,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"buffer_size": 107,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -535,6 +521,12 @@
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/tareas/formularioPhpComunadades/config/user.php",
+		"/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/index.php",
+		"/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/controllers/Welcome.php",
+		"/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/controllers/Blog.php",
+		"/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/controllers/Products.php",
+		"/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/config/routes.php",
 		"/C/xampp/htdocs/tareas/Space_Invade_0.1/css/css.css",
 		"/C/xampp/htdocs/tareas/Space_Invade_0.1/index.html",
 		"/C/xampp/htdocs/tareas/Space_Invade_0.1/js/js.js",
@@ -697,87 +689,31 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/index.php",
+					"file": "/C/xampp/htdocs/tareas/formularioPhpComunadades/config/database.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10253,
+						"buffer_size": 668,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								131,
+								140
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3331.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/controllers/Welcome.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 679,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/controllers/Blog.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 156,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								154,
-								154
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -787,20 +723,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/controllers/Products.php",
+					"buffer": 1,
+					"file": "/C/xampp/htdocs/tareas/formularioPhpComunadades/create.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 169,
+						"buffer_size": 4265,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								168,
-								169
+								787,
+								787
 							]
 						],
 						"settings":
@@ -808,35 +744,35 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 364.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/config/routes.php",
+					"buffer": 2,
+					"file": "/C/xampp/htdocs/tareas/limitar_acceso/.htaccess",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2013,
+						"buffer_size": 107,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1859,
-								1859
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 541.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
