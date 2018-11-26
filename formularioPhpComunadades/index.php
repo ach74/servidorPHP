@@ -31,10 +31,11 @@
         // delete message prompt will be here
 
         // select all data
-        $query = "SELECT cif, nombre, pais, direccion,imagen,control_de_ingresos,control_de_gastos,moneda,ver_cuenta,Notificaciones,Fecha_creacion FROM comunidades ORDER BY id DESC";
+        $query = "SELECT cif, nombre, pais, direccion,control_de_ingresos,control_de_gastos,moneda,ver_cuenta,Notificaciones,Fecha_creacion FROM comunidades ORDER BY id DESC";
 
         //$query = "SELECT id, name, description, price FROM products ORDER BY id DESC";
         $stmt = $con->prepare($query);
+
         $stmt->execute();
 
         // this is how to get number of rows returned
@@ -50,11 +51,16 @@
 
     //creating our table heading
         echo "<tr>";
-        echo "<th>ID</th>";
-        echo "<th>Name</th>";
-        echo "<th>Description</th>";
-        echo "<th>Price</th>";
-        echo "<th>Action</th>";
+        echo "<th>CIF</th>";
+        echo "<th>Nombre</th>";
+        echo "<th>Pais</th>";
+        echo "<th>Direccion</th>";
+        echo "<th>control_de_ingresos</th>";
+        echo "<th>control_de_gastos</th>";
+        echo "<th>moneda</th>";
+        echo "<th>ver_cuenta</th>";
+        echo "<th>Notificaciones</th>";
+        echo "<th>Fecha_creacion</th>";
         echo "</tr>";
 
     // retrieve our table contents
@@ -68,19 +74,26 @@
 
     // creating new table row per record
             echo "<tr>";
-            echo "<td>{$id}</td>";
-            echo "<td>{$name}</td>";
-            echo "<td>{$description}</td>";
-            echo "<td>&#36;{$price}</td>";
+            echo "<td>{$cif}</td>";
+            echo "<td>{$nombre}</td>";
+            echo "<td>{$pais}</td>";
+            echo "<td>{$direccion}</td>";
+            echo "<td>{$control_de_ingresos}</td>";
+            echo "<td>{$nomcontrol_de_gastosbre}</td>";
+            echo "<td>{$moneda}</td>";
+            echo "<td>{$ver_cuenta}</td>";
+            echo "<td>{$Notificaciones}</td>";
+            echo "<td>{$Fecha_creacion}</td>";
+
             echo "<td>";
             // read one record 
-            echo "<a href='read_one.php?id={$id}' class='btn btn-info m-r-1em'>Read</a>";
+            echo "<a href='read_one.php?cif={$cif}' class='btn btn-info m-r-1em'>Read</a>";
 
             // we will use this links on next part of this post
-            echo "<a href='update.php?id={$id}' class='btn btn-primary m-r-1em'>Edit</a>";
+            echo "<a href='update.php?cif={$cif}' class='btn btn-primary m-r-1em'>Edit</a>";
 
             // we will use this links on next part of this post
-            echo "<a href='#' onclick='delete_user({$id});'  class='btn btn-danger'>Delete</a>";
+            echo "<a href='#' onclick='delete_user({$cif});'  class='btn btn-danger'>Delete</a>";
             echo "</td>";
             echo "</tr>";
         }
