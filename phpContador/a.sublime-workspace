@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"ene",
+				"enemigos"
+			],
+			[
+				"dir",
+				"direccionEnemigo"
+			],
+			[
+				"di",
+				"disparosEnemigos"
+			],
+			[
+				"im",
+				"imgNave"
+			],
+			[
+				"img",
+				"imgNave"
+			],
+			[
+				"ma",
+				"margin-left\tproperty"
+			],
+			[
+				"li",
+				"li\tTag"
+			],
+			[
+				"a",
+				"auto\tmargin"
+			],
+			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"grei",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"gri",
+				"grid-template-rows\tproperty"
+			],
+			[
+				"gr",
+				"grid\tdisplay"
+			],
+			[
+				"s",
+				"script\tTag"
+			],
+			[
 				"in",
 				"input\tTag"
 			],
@@ -12,20 +64,12 @@
 				"border-radius\tproperty"
 			],
 			[
-				"s",
-				"score"
-			],
-			[
 				"ga",
 				"gameScore"
 			],
 			[
 				"ba",
 				"background-color\tproperty"
-			],
-			[
-				"di",
-				"div\tTag"
 			],
 			[
 				"g",
@@ -46,10 +90,6 @@
 			[
 				"p",
 				"p\tTag"
-			],
-			[
-				"a",
-				"adivina"
 			],
 			[
 				"php",
@@ -100,14 +140,6 @@
 				"ruta_nuevo_destino"
 			],
 			[
-				"im",
-				"imagName"
-			],
-			[
-				"ma",
-				"main"
-			],
-			[
 				"st",
 				"style\tTag"
 			],
@@ -118,14 +150,6 @@
 			[
 				"for",
 				"form\tTag"
-			],
-			[
-				"gri",
-				"grid-area\tproperty"
-			],
-			[
-				"gr",
-				"grid-row\tproperty"
 			],
 			[
 				"grid-column-",
@@ -230,10 +254,6 @@
 			[
 				"ti",
 				"title\tTag"
-			],
-			[
-				"li",
-				"link\tTag"
 			],
 			[
 				"grid",
@@ -428,32 +448,20 @@
 	"buffers":
 	[
 		{
-			"file": "/C/xampp/htdocs/tareas/formularioPhpComunadades/config/database.php",
+			"file": "/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/js/js.js",
 			"settings":
 			{
-				"buffer_size": 668,
+				"buffer_size": 8356,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "<!DOCTYPE HTML>\n<html>\n<head>\n\t<title>PDO - Create a Record - PHP CRUD Tutorial</title>\n\n\t<!-- Latest compiled and minified Bootstrap CSS -->\n\t<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" />\n\n</head>\n<body>\n\n\t<!-- container -->\n\t<div class=\"container\">\n\n\t\t<div class=\"page-header\">\n\t\t\t<h1>Create Product</h1>\n\t\t</div>\n\n\t\t<?php\nif($_POST){\n \n    // include database connection\n    include 'config/database.php';\n \n    try{\n     \n        // insert query\n        $query = \"INSERT INTO products SET name=:name, description=:description, price=:price, created=:created\";\n \n        // prepare query for execution\n        $stmt = $con->prepare($query);\n \n        // posted values\n        $name=htmlspecialchars(strip_tags($_POST['name']));\n        $description=htmlspecialchars(strip_tags($_POST['description']));\n        $price=htmlspecialchars(strip_tags($_POST['price']));\n \n        // bind the parameters\n        $stmt->bindParam(':name', $name);\n        $stmt->bindParam(':description', $description);\n        $stmt->bindParam(':price', $price);\n         \n        // specify when this record was inserted to the database\n        $created=date('Y-m-d H:i:s');\n        $stmt->bindParam(':created', $created);\n         \n        // Execute the query\n        if($stmt->execute()){\n            echo \"<div class='alert alert-success'>Record was saved.</div>\";\n        }else{\n            echo \"<div class='alert alert-danger'>Unable to save record.</div>\";\n        }\n         \n    }\n     \n    // show error\n    catch(PDOException $exception){\n        die('ERROR: ' . $exception->getMessage());\n    }\n}\n?>\n\n\t\t<!-- html form here where the product information will be entered -->\n\t\t<form action=\"<?php echo htmlspecialchars($_SERVER[\"PHP_SELF\"]);?>\" method=\"post\">\n\t\t\t<table class='table table-hover table-responsive table-bordered'>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>CIF</td>\n\t\t\t\t\t<td><input type='text' name='CIF' class='form-control'/></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Pais</td>\n\t\t\t\t\t<td><input type='text' name='pais' class='form-control'/></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Nombre</td>\n\t\t\t\t\t<td><input type='text' name='nombre' class='form-control'/></td>\n\t\t\t\t</tr>\n\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Direccion</td>\n\t\t\t\t\t<td><input type='text' name='direccion' class='form-control' /></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Imagen</td>\n\t\t\t\t\t<td><input type='file' name='Imagen' class='form-control'></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Control de gastos</td>\n\t\t\t\t\t<td><select name=\"controlGastos\" class='form-control'>\n\t\t\t\t\t\t<option value=\"si\">Si</option>\n\t\t\t\t\t\t<option value=\"no\">No</option>\n\t\t\t\t\t</select></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Control de Ingresos</td>\n\t\t\t\t\t<td><select name=\"controlIngresos\" class='form-control'>\n\t\t\t\t\t\t<option value=\"si\">Si</option>\n\t\t\t\t\t\t<option value=\"no\">No</option>\n\t\t\t\t\t</select></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Moneda</td>\n\t\t\t\t\t<td><select name=\"moneda\" class='form-control'>\n\t\t\t\t\t\t<option value=\"euro\">Euros</option>\n\t\t\t\t\t\t<option value=\"dolar\">Dolar</option>\n\t\t\t\t\t\t<option value=\"pesos\">Pesos</option>\n\t\t\t\t\t\t<option value=\"rupias\">Notificaciones</option>\n\t\t\t\t\t</select></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Notificaciones</td>\n\t\t\t\t\t<td><select name=\"Notificaciones\" class='form-control'>\n\t\t\t\t\t\t<option value=\"todos\">Todos</option>\n\t\t\t\t\t\t<option value=\"contactoPrincipal\">Contacto Principal</option>\n\t\t\t\t\t</select></td>\n\t\t\t\t</tr>\n\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Ver cuenta comunidad de propietarios</td>\n\t\t\t\t\t<td><select name=\"verCuentaComunidad\" class='form-control'>\n\t\t\t\t\t\t<option value=\"todos\">Todos</option>\n\t\t\t\t\t\t<option value=\"administrador\">Administrador</option>\n\t\t\t\t\t\t<option value=\"mienbros\">Mienbro del consejo de administracion</option>\n\t\t\t\t\t</select></td>\n\t\t\t\t</tr>\n\n\t\t\t\t<tr>\n\t\t\t\t\t<td></td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<input type='submit' value='Save' class='btn btn-primary' />\n\t\t\t\t\t\t<a href='index.php' class='btn btn-danger'>Back to read products</a>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</table>\n\t\t</form>\n\n\t</div> <!-- end .container -->\n\n\t<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n\t<script src=\"https://code.jquery.com/jquery-3.2.1.min.js\"></script>\n\n\t<!-- Latest compiled and minified Bootstrap JavaScript -->\n\t<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n\n</body>\n</html>",
-			"file": "/C/xampp/htdocs/tareas/formularioPhpComunadades/create.php",
-			"file_size": 3132,
-			"file_write_time": 131873795307914250,
+			"file": "/C/Users/dam2a08/Desktop/A7/interfaces/D.inter05/ex2.html",
 			"settings":
 			{
-				"buffer_size": 4265,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/xampp/htdocs/tareas/limitar_acceso/.htaccess",
-			"settings":
-			{
-				"buffer_size": 107,
-				"line_ending": "Windows"
+				"buffer_size": 970,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -515,12 +523,19 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9",
-		"/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application",
-		"/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/config"
+		"/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1",
+		"/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/js"
 	],
 	"file_history":
 	[
+		"/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/index.html",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/P3/css/css.css",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/P3/index.html",
+		"/C/Users/dam2a08/Desktop/A7/a.html",
+		"/C/Users/dam2a08/Desktop/A7/apuntes/php/class",
+		"/C/xampp/htdocs/tareas/limitar_acceso/.htaccess",
+		"/C/xampp/htdocs/tareas/formularioPhpComunadades/config/database.php",
+		"/C/xampp/htdocs/tareas/formularioPhpComunadades/create.php",
 		"/C/xampp/htdocs/tareas/formularioPhpComunadades/config/user.php",
 		"/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/index.php",
 		"/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/controllers/Welcome.php",
@@ -629,7 +644,7 @@
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -645,6 +660,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"consol",
+			"dropbtn",
+			"news",
+			"dropdown",
 			";\n",
 			"\t.",
 			"images",
@@ -678,6 +697,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"newsBtn",
+			"news",
 			"img"
 		],
 		"reverse": false,
@@ -689,93 +710,65 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/xampp/htdocs/tareas/formularioPhpComunadades/config/database.php",
+					"file": "/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/js/js.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 668,
+						"buffer_size": 8356,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								131,
-								140
+								6200,
+								6200
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3930.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/C/xampp/htdocs/tareas/formularioPhpComunadades/create.php",
+					"file": "/C/Users/dam2a08/Desktop/A7/interfaces/D.inter05/ex2.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4265,
+						"buffer_size": 970,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								787,
-								787
+								563,
+								538
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 364.0,
+						"translation.y": 225.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/xampp/htdocs/tareas/limitar_acceso/.htaccess",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 107,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -824,7 +817,7 @@
 	"project": "a.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":

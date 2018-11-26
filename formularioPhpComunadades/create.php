@@ -13,10 +13,64 @@
 	<div class="container">
 
 		<div class="page-header">
-			<h1>Create Product</h1>
+			<h1>Nueva Comunidad</h1>
 		</div>
 
-		<!-- PHP insert code will be here -->
+		<?php
+		if($_POST){
+
+    // include database connection
+			include 'config/database.php';
+
+			try{
+
+        // insert query
+				$query = "INSERT INTO Comunidades SET CIF=:Cif, nombre=:nombre, pais=:pais, direccion=:direccion,Control_de_ingresos=:Control_de_ingresos,Control_de_gastos=:Control_de_gastos,Moneda=:moneda,Ver_cuentas=:Ver_cuentas,Notificaciones=:notificaciones,Fecha_creacion=:fechaCreacion";
+
+        // prepare query for execution
+				$stmt = $con->prepare($query);
+
+        // posted values
+				$CIF=htmlspecialchars(strip_tags($_POST['CIF']));
+				$nombre=htmlspecialchars(strip_tags($_POST['nombre']));
+				$pais=htmlspecialchars(strip_tags($_POST['pais']));
+				$direccion=htmlspecialchars(strip_tags($_POST['direccion']));
+				$controlGastos=htmlspecialchars(strip_tags($_POST['controlGastos']));
+				$controlIngresos=htmlspecialchars(strip_tags($_POST['controlIngresos']));
+				$moneda=htmlspecialchars(strip_tags($_POST['moneda']));
+				$notificaciones=htmlspecialchars(strip_tags($_POST['notificaciones']));
+				$verCuentaComunidad=htmlspecialchars(strip_tags($_POST['verCuentaComunidad']));
+
+        // bind the parameters
+				$stmt->bindParam(':Cif', $CIF);
+				$stmt->bindParam(':nombre', $nombre);
+				$stmt->bindParam(':pais', $pais);
+				$stmt->bindParam(':direccion', $direccion);
+				$stmt->bindParam(':Control_de_gastos', $controlGastos);
+				$stmt->bindParam(':Control_de_ingresos', $controlIngresos);
+				$stmt->bindParam(':moneda', $moneda);
+				$stmt->bindParam(':Notificaciones', $notificaciones);
+				$stmt->bindParam(':Ver_cuentas', $verCuentaComunidad);
+
+        // specify when this record was inserted to the database
+				$fechaActual=date('Y-m-d H:i:s');
+				$stmt->bindParam(':fechaCreacion', $fechaActual);
+
+        // Execute the query
+				if($stmt->execute()){
+					echo "<div class='alert alert-success'>Record was saved.</div>";
+				}else{
+					echo "<div class='alert alert-danger'>Unable to save record.</div>";
+				}
+
+			}
+
+    // show error
+			catch(PDOException $exception){
+				die('ERROR: ' . $exception->getMessage());
+			}
+		}
+		?>
 
 		<!-- html form here where the product information will be entered -->
 		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
@@ -40,7 +94,7 @@
 				</tr>
 				<tr>
 					<td>Imagen</td>
-					<td><input type='file' name='Imagen' class='form-control'></td>
+					<td><input type='file' name='imagen' class='form-control'></td>
 				</tr>
 				<tr>
 					<td>Control de gastos</td>
@@ -67,7 +121,7 @@
 				</tr>
 				<tr>
 					<td>Notificaciones</td>
-					<td><select name="Notificaciones" class='form-control'>
+					<td><select name="notificaciones" class='form-control'>
 						<option value="todos">Todos</option>
 						<option value="contactoPrincipal">Contacto Principal</option>
 					</select></td>

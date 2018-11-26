@@ -3,10 +3,10 @@
 class Database{
  
     // specify your own database credentials
-    private $host = "localhost";
-    private $db_name = "php_login_system";
-    private $username = "root";
-    private $password = "";
+    private $host = "comunidades.randion.es";
+    private $db_name = "daw2a_comunidades";
+    private $username = "daw2a";
+    private $password = "abc123.";
     public $conn;
  
     // get the database connection
