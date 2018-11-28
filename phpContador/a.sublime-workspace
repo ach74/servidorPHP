@@ -4,16 +4,40 @@
 		"selected_items":
 		[
 			[
+				"di",
+				"direccion"
+			],
+			[
 				"ene",
-				"enemigos"
+				"enemigo"
+			],
+			[
+				"d",
+				"direccion"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"g",
+				"grid\tproperty"
+			],
+			[
+				"r",
+				"right\tproperty"
+			],
+			[
+				"div",
+				"div\tTag"
+			],
+			[
+				"gri",
+				"grid-area\tproperty"
 			],
 			[
 				"dir",
 				"direccionEnemigo"
-			],
-			[
-				"di",
-				"disparosEnemigos"
 			],
 			[
 				"im",
@@ -44,10 +68,6 @@
 				"grid-template-columns\tproperty"
 			],
 			[
-				"gri",
-				"grid-template-rows\tproperty"
-			],
-			[
 				"gr",
 				"grid\tdisplay"
 			],
@@ -70,10 +90,6 @@
 			[
 				"ba",
 				"background-color\tproperty"
-			],
-			[
-				"g",
-				"grid\tdisplay"
 			],
 			[
 				"nu",
@@ -122,10 +138,6 @@
 			[
 				"con",
 				"container"
-			],
-			[
-				"r",
-				"row-reverse\tflex-direction"
 			],
 			[
 				"flex-",
@@ -447,23 +459,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/js/js.js",
-			"settings":
-			{
-				"buffer_size": 8356,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/dam2a08/Desktop/A7/interfaces/D.inter05/ex2.html",
-			"settings":
-			{
-				"buffer_size": 970,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -528,14 +523,18 @@
 	],
 	"file_history":
 	[
-		"/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/index.html",
-		"/C/Users/dam2a08/Desktop/A7/interfaces/P3/css/css.css",
+		"/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/js/js.js",
 		"/C/Users/dam2a08/Desktop/A7/interfaces/P3/index.html",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/P3/js/js.js",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/P3/css/css.css",
+		"/C/xampp/htdocs/tareas/formularioPhpComunadades/index.php",
+		"/C/xampp/htdocs/tareas/formularioPhpComunadades/create.php",
+		"/C/xampp/htdocs/tareas/formularioPhpComunadades/config/database.php",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/D.inter05/ex2.html",
+		"/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/index.html",
 		"/C/Users/dam2a08/Desktop/A7/a.html",
 		"/C/Users/dam2a08/Desktop/A7/apuntes/php/class",
 		"/C/xampp/htdocs/tareas/limitar_acceso/.htaccess",
-		"/C/xampp/htdocs/tareas/formularioPhpComunadades/config/database.php",
-		"/C/xampp/htdocs/tareas/formularioPhpComunadades/create.php",
 		"/C/xampp/htdocs/tareas/formularioPhpComunadades/config/user.php",
 		"/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/index.php",
 		"/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/application/controllers/Welcome.php",
@@ -660,6 +659,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			">\n",
+			"news",
+			"']));\n",
 			"consol",
 			"dropbtn",
 			"news",
@@ -697,6 +699,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"dropdown",
 			"newsBtn",
 			"news",
 			"img"
@@ -710,67 +713,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/js/js.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8356,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6200,
-								6200
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3930.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/dam2a08/Desktop/A7/interfaces/D.inter05/ex2.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 970,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								563,
-								538
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 225.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -817,7 +761,7 @@
 	"project": "a.sublime-project",
 	"replace":
 	{
-		"height": 72.0
+		"height": 94.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -894,7 +838,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": false,
-	"side_bar_width": 229.0,
+	"side_bar_width": 181.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
