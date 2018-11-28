@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"co",
+				"conn"
+			],
+			[
 				"di",
 				"direccion"
 			],
@@ -276,10 +280,6 @@
 				"margin\tproperty"
 			],
 			[
-				"co",
-				"color\tproperty"
-			],
-			[
 				"background",
 				"background-image\tproperty"
 			],
@@ -523,13 +523,15 @@
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/tareas/Ordenacion/text01.php",
+		"/C/xampp/htdocs/tareas/Ordenacion/index.html",
+		"/C/xampp/htdocs/tareas/formularioPhpComunadades/index.php",
+		"/C/xampp/htdocs/tareas/formularioPhpComunadades/config/database.php",
 		"/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/js/js.js",
 		"/C/Users/dam2a08/Desktop/A7/interfaces/P3/index.html",
 		"/C/Users/dam2a08/Desktop/A7/interfaces/P3/js/js.js",
 		"/C/Users/dam2a08/Desktop/A7/interfaces/P3/css/css.css",
-		"/C/xampp/htdocs/tareas/formularioPhpComunadades/index.php",
 		"/C/xampp/htdocs/tareas/formularioPhpComunadades/create.php",
-		"/C/xampp/htdocs/tareas/formularioPhpComunadades/config/database.php",
 		"/C/Users/dam2a08/Desktop/A7/interfaces/D.inter05/ex2.html",
 		"/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/index.html",
 		"/C/Users/dam2a08/Desktop/A7/a.html",
@@ -659,6 +661,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"select2",
+			"sel",
+			"sele",
+			"selec",
 			">\n",
 			"news",
 			"']));\n",

@@ -28,7 +28,7 @@
 				$query = "INSERT INTO Comunidades SET CIF=:Cif, nombre=:nombre, pais=:pais, direccion=:direccion,Control_de_ingresos=:Control_de_ingresos,Control_de_gastos=:Control_de_gastos,Moneda=:moneda,Ver_cuentas=:Ver_cuentas,Notificaciones=:notificaciones,Fecha_creacion=:fechaCreacion";
 
         // prepare query for execution
-				$stmt = $con->prepare($query);
+				$stmt = $conn->prepare($query);
 
         // posted values
 				$CIF=htmlspecialchars(strip_tags($_POST['CIF']));

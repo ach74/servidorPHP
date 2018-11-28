@@ -31,13 +31,20 @@
         // delete message prompt will be here
 
         // select all data
-        $query = "SELECT cif, nombre, pais, direccion,control_de_ingresos,control_de_gastos,moneda,ver_cuenta,Notificaciones,Fecha_creacion FROM comunidades ORDER BY id DESC";
+        //$query = "SELECT cif, nombre, pais, direccion,control_de_ingresos,control_de_gastos,moneda,ver_cuenta,Notificaciones,Fecha_creacion FROM comunidades ORDER BY id DESC";
+
+        $query = ("select * from comunidades");
 
         //$query = "SELECT id, name, description, price FROM products ORDER BY id DESC";
-        $stmt = $con->prepare($query);
+
+        $stmt = $conn->prepare($query);
+        //$stmt = $con->pg_prepare($query);
 
         $stmt->execute();
 
+        var_dump($stmt->fetch(PDO::FETCH_ASSOC));
+
+        /*
         // this is how to get number of rows returned
         $num = $stmt->rowCount();
 
@@ -107,6 +114,7 @@
     else{
         echo "<div class='alert alert-danger'>No records found.</div>";
     }
+    */
     ?>
 
 </div> <!-- end .container -->

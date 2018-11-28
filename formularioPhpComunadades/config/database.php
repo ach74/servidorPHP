@@ -1,26 +1,16 @@
 <?php
-// used to get mysql database connection
-class Database{
- 
-    // specify your own database credentials
-    private $host = "comunidades.randion.es";
-    private $db_name = "daw2a_comunidades";
-    private $username = "daw2a";
-    private $password = "abc123.";
-    public $conn;
- 
-    // get the database connection
-    public function getConnection(){
- 
-        $this->conn = null;
- 
-        try{
-            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
-        }catch(PDOException $exception){
-            echo "Connection error: " . $exception->getMessage();
-        }
- 
-        return $this->conn;
+$usuario="daw2a";
+$contraseña="abc123.";
+try {
+    $conn = new PDO('pgsql:dbname=daw2a_comunidades host=adminer.randion.es', $usuario, $contraseña);
+    if ($conn) {
+		echo "Conexion con exito a la base de datos.";
     }
+} catch(PDOException $exception){
+    echo "Connection error: " . $exception->getMessage();
+    phpinfo();
 }
+/*
+
+*/
 ?>
