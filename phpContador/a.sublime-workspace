@@ -4,28 +4,108 @@
 		"selected_items":
 		[
 			[
-				"co",
-				"conn"
+				"fle",
+				"flex-direction\tproperty"
+			],
+			[
+				"f",
+				"fa-arrow-circle-up"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"bo",
+				"border-radius\tproperty"
+			],
+			[
+				"gri",
+				"grid-template-rows\tproperty"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"h",
+				"h2\tTag"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
 			],
 			[
 				"di",
-				"direccion"
+				"display\tproperty"
+			],
+			[
+				"l",
+				"link\tTag"
+			],
+			[
+				"in",
+				"inputText"
+			],
+			[
+				"al",
+				"align-items\tproperty"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"v",
+				"velocidad"
 			],
 			[
 				"ene",
 				"enemigo"
 			],
 			[
+				"el",
+				"else"
+			],
+			[
+				"n",
+				"nave"
+			],
+			[
+				"met",
+				"meta\tTag"
+			],
+			[
+				"g",
+				"grid-gap\tproperty"
+			],
+			[
+				"p",
+				"php\t<?php … ?>"
+			],
+			[
+				"pa",
+				"paginacion"
+			],
+			[
+				"to",
+				"total_rows"
+			],
+			[
+				"pag",
+				"page"
+			],
+			[
 				"d",
-				"direccion"
+				"display\tproperty"
+			],
+			[
+				"co",
+				"conn"
 			],
 			[
 				"padd",
 				"padding\tproperty"
-			],
-			[
-				"g",
-				"grid\tproperty"
 			],
 			[
 				"r",
@@ -34,10 +114,6 @@
 			[
 				"div",
 				"div\tTag"
-			],
-			[
-				"gri",
-				"grid-area\tproperty"
 			],
 			[
 				"dir",
@@ -54,10 +130,6 @@
 			[
 				"ma",
 				"margin-left\tproperty"
-			],
-			[
-				"li",
-				"li\tTag"
 			],
 			[
 				"a",
@@ -80,20 +152,12 @@
 				"script\tTag"
 			],
 			[
-				"in",
-				"input\tTag"
-			],
-			[
 				"bord",
 				"border-radius\tproperty"
 			],
 			[
 				"ga",
 				"gameScore"
-			],
-			[
-				"ba",
-				"background-color\tproperty"
 			],
 			[
 				"nu",
@@ -108,24 +172,12 @@
 				"MaxNum"
 			],
 			[
-				"p",
-				"p\tTag"
-			],
-			[
 				"php",
 				"php"
 			],
 			[
-				"h",
-				"html\thtml"
-			],
-			[
 				"i",
 				"int"
-			],
-			[
-				"el",
-				"elseif\telseif …"
 			],
 			[
 				"mi",
@@ -134,14 +186,6 @@
 			[
 				"fl",
 				"flex-grow\tproperty"
-			],
-			[
-				"f",
-				"flex-start\talign-self"
-			],
-			[
-				"con",
-				"container"
 			],
 			[
 				"flex-",
@@ -180,10 +224,6 @@
 				"min-width\tproperty"
 			],
 			[
-				"al",
-				"align-self\tproperty"
-			],
-			[
 				"pass",
 				"password"
 			],
@@ -194,10 +234,6 @@
 			[
 				"cla",
 				"class_alias"
-			],
-			[
-				"fle",
-				"flex-wrap\tproperty"
 			],
 			[
 				"print",
@@ -222,10 +258,6 @@
 			[
 				"borde",
 				"border-right\tproperty"
-			],
-			[
-				"bo",
-				"border\tproperty"
 			],
 			[
 				"no",
@@ -262,10 +294,6 @@
 			[
 				"fon",
 				"font-size\tproperty"
-			],
-			[
-				"margin",
-				"margin\tproperty"
 			],
 			[
 				"ti",
@@ -334,10 +362,6 @@
 			[
 				"FON",
 				"font-size\tproperty"
-			],
-			[
-				"l",
-				"li\tTag"
 			],
 			[
 				"te",
@@ -459,6 +483,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/C/Users/dam2a08/Downloads/a-better-login-system/ACL/sampleData.sql",
+			"settings":
+			{
+				"buffer_size": 2292,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -518,24 +550,60 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1",
-		"/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/js"
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/tareas/Ordenacion/text01.php",
-		"/C/xampp/htdocs/tareas/Ordenacion/index.html",
-		"/C/xampp/htdocs/tareas/formularioPhpComunadades/index.php",
-		"/C/xampp/htdocs/tareas/formularioPhpComunadades/config/database.php",
-		"/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/js/js.js",
+		"/C/Users/dam2a08/Downloads/a-better-login-system/ACL/install.sql",
+		"/C/xampp/htdocs/tareas/ACL/assets/php/database.php",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/D.inter006/ex02/index.html",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/D.inter006/ex02/css/css.css",
+		"/C/xampp/htdocs/tareas/php-login-script-level-1/config/database.php",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/_exam3/ex02/styles2.css",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/_exam3/ex02/js.js",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/_exam3/ex02/exercise2.html",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/D.inter06/P3/js/js.js",
 		"/C/Users/dam2a08/Desktop/A7/interfaces/P3/index.html",
-		"/C/Users/dam2a08/Desktop/A7/interfaces/P3/js/js.js",
-		"/C/Users/dam2a08/Desktop/A7/interfaces/P3/css/css.css",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/_exam3/ex01/index.html",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/_exam3/ex01/css/css.css",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/_exam3/_exam3/exercise2.html",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/examen02/css/css.css",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/examen02/index.html",
+		"/C/xampp/htdocs/tareas/php-login-script-level-1/objects/user.php",
+		"/C/xampp/htdocs/tareas/php-login-script-level-1/admin/login_checker.php",
+		"/C/xampp/htdocs/tareas/php-login-script-level-1/admin/navigation.php",
+		"/C/xampp/htdocs/tareas/php-login-script-level-1/index.php",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/D.inter06/index.html",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/D.inter06/css/css.css",
+		"/C/xampp/htdocs/tareas/loginComunidades/objects/user.php",
+		"/C/xampp/htdocs/tareas/loginComunidades/index.php",
+		"/C/xampp/htdocs/tareas/loginComunidades/register.php",
+		"/C/xampp/htdocs/tareas/loginComunidades/utils.php",
+		"/C/xampp/htdocs/tareas/loginComunidades/read_users.php",
+		"/C/xampp/htdocs/tareas/loginComunidades/read_users_template.php",
+		"/C/xampp/htdocs/tareas/loginComunidades/navigation.php",
+		"/C/xampp/htdocs/tareas/loginComunidades/paging.php",
+		"/C/xampp/htdocs/tareas/loginComunidades/logout.php",
+		"/C/xampp/htdocs/tareas/loginComunidades/login_checker.php",
+		"/C/xampp/htdocs/tareas/loginComunidades/layout_foot.php",
+		"/C/xampp/htdocs/tareas/loginComunidades/layout_head.php",
+		"/C/xampp/htdocs/tareas/loginComunidades/login.php",
 		"/C/xampp/htdocs/tareas/formularioPhpComunadades/create.php",
-		"/C/Users/dam2a08/Desktop/A7/interfaces/D.inter05/ex2.html",
+		"/C/xampp/htdocs/tareas/formularioPhpComunadades/config/database.php",
+		"/C/xampp/htdocs/tareas/formularioPhpComunadades/index.php",
 		"/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/index.html",
-		"/C/Users/dam2a08/Desktop/A7/a.html",
+		"/C/Users/dam2a08/Desktop/A7/entornosCliente/Space_Invade_0.1/js/js.js",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/P3/css/css.css",
+		"/C/Users/dam2a08/Desktop/A7/apuntes/php/examen.txt",
+		"/C/xampp/htdocs/tareas/examen/ejercicio 5/index.php",
+		"/C/xampp/htdocs/tareas/examen/Nueva carpeta/paging.php",
+		"/C/xampp/htdocs/tareas/examen/Nueva carpeta/user.php",
+		"/C/xampp/htdocs/tareas/examen/index.php",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/P3/js/js.js",
+		"/C/xampp/htdocs/tareas/Ordenacion/text01.php",
 		"/C/Users/dam2a08/Desktop/A7/apuntes/php/class",
+		"/C/xampp/htdocs/tareas/Ordenacion/index.html",
+		"/C/Users/dam2a08/Desktop/A7/interfaces/D.inter05/ex2.html",
+		"/C/Users/dam2a08/Desktop/A7/a.html",
 		"/C/xampp/htdocs/tareas/limitar_acceso/.htaccess",
 		"/C/xampp/htdocs/tareas/formularioPhpComunadades/config/user.php",
 		"/C/xampp/htdocs/tareas/CodeIgniter-3.1.9/CodeIgniter-3.1.9/index.php",
@@ -590,8 +658,6 @@
 		"/C/Users/dam2a08/Downloads/A2.5/A2.5/ex2-news.html",
 		"/C/xampp/htdocs/tareas/php-login-script-level-1/.htaccess",
 		"/C/xampp/htdocs/tareas/php-login-script-level-1/config/core.php",
-		"/C/xampp/htdocs/tareas/php-login-script-level-1/objects/user.php",
-		"/C/xampp/htdocs/tareas/php-login-script-level-1/config/database.php",
 		"/C/xampp/htdocs/tareas/Sistema_Login_PHP/index.php",
 		"/C/xampp/htdocs/tareas/php-login-script-level-1.php",
 		"/C/xampp/htdocs/tareas/Clase02Daw/tarea01/ach.php",
@@ -614,34 +680,7 @@
 		"/C/xampp/htdocs/tareas/php/update.php",
 		"/C/xampp/htdocs/tareas/php/read_one.php",
 		"/C/xampp/htdocs/tareas/php/delete.php",
-		"/C/xampp/htdocs/tareas/php/index.php",
-		"/C/Users/dam2a08/Downloads/Fuentes_Sintes_Ismael_C2P02_ordenacion/Formulario_ordenación.php",
-		"/C/Users/dam2a08/Desktop/A7/Space_Invade/css/css.css",
-		"/C/Users/dam2a08/Desktop/A7/Space_Invade/js/js.js",
-		"/C/Users/dam2a08/Desktop/A7/D.interfaces_2/index.html",
-		"/C/Users/dam2a08/Desktop/A7/D.interfaces_2/css/css.css",
-		"/C/Users/dam2a08/Desktop/A7/D.interface_2.3/index.html",
-		"/C/xampp/htdocs/tareas/Clase02Daw/Ordenacion/css/css.css",
-		"/C/xampp/htdocs/tareas/Clase02Daw/Ordenacion/js/js.js",
-		"/C/xampp/htdocs/tareas/Clase02Daw/Ordenacion/txt.txt",
-		"/C/xampp/htdocs/tareas/Clase02Daw/Ordenacion/json.json",
-		"/C/xampp/htdocs/tareas/php-beginner-crud-level-1/config/database.php",
-		"/C/xampp/htdocs/tareas/php-beginner-crud-level-1/create.php",
-		"/C/xampp/htdocs/tareas/mysqlCrud/config/database.php",
-		"/C/Users/dam2a08/Desktop/D.interficies/css/css.css",
-		"/C/Users/dam2a08/Desktop/D.interficies/t01.html",
-		"/C/xampp/htdocs/tareas/Clase02Daw/Ordenacion/burbuja.php",
-		"/C/xampp/htdocs/tareas/Clase02Daw/D.Web Cliente/js.js",
-		"/C/xampp/htdocs/tareas/Clase02Daw/D.Web Cliente/css.css",
-		"/C/xampp/htdocs/tareas/Clase02Daw/D.Web Cliente/html.html",
-		"/C/xampp/htdocs/tareas/D.Web Cliente/css.css",
-		"/C/xampp/htdocs/tareas/D.Web Cliente/js.js",
-		"/C/xampp/htdocs/tareas/D.Web Cliente/html.html",
-		"/C/Users/dam2a08/Desktop/D.interficies/css/html.html",
-		"/C/Users/dam2a08/Desktop/D.interficies/css/js.js",
-		"/C/Users/dam2a08/Desktop/D.interficies/css.css",
-		"/C/xampp/htdocs/tareas/tarea01/tarea01.php",
-		"/C/xampp/htdocs/tareas/Ordenacion/burbuja.php"
+		"/C/xampp/htdocs/tareas/php/index.php"
 	],
 	"find":
 	{
@@ -661,6 +700,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"`",
+			"active",
+			"transition",
+			"openNav",
+			"containerText",
+			"$_SESSION['type']",
+			"background",
+			"img",
+			"bg-highlight.jpg",
+			"5fr",
+			"#myNav",
+			"myNav",
+			"?>",
+			"text",
+			"text-de",
 			"select2",
 			"sel",
 			"sele",
@@ -705,6 +759,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			" ",
+			"",
 			"dropdown",
 			"newsBtn",
 			"news",
@@ -713,20 +769,49 @@
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": true,
+		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/dam2a08/Downloads/a-better-login-system/ACL/sampleData.sql",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2292,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9,
+								10
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.sublime-syntax"
+						},
+						"translation.x": 71.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -767,7 +852,7 @@
 	"project": "a.sublime-project",
 	"replace":
 	{
-		"height": 94.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -843,7 +928,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 181.0,
 	"status_bar_visible": true,
 	"template_settings":
